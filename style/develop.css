@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@1,400...700&family=Open+Sans:ital,wght@0,400..700;");
+@import "tailwindcss";
+
+@theme {
+	--font-heading: "Raleway", sans-serif;
+	--font-sans: "Open Sans", sans-serif;
+
+	--color-flo-navy-800: hsl(219, 30%, 18%);
+	--color-flo-navy-850: hsl(217, 28%, 15%);
+	--color-flo-navy-900: hsl(218, 28%, 13%);
+	--color-flo-navy-950: hsl(216, 53%, 9%);
+	--color-flo-teal: hsl(176, 68%, 64%);
+	--color-flo-cyan: hsl(198, 60%, 50%);
+	--color-flo-red: hsl(0, 100%, 63%);
+
+}
