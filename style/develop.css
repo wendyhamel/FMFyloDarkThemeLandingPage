@@ -13,4 +13,7 @@
 	--color-flo-cyan: hsl(198, 60%, 50%);
 	--color-flo-red: hsl(0, 100%, 63%);
 
+	--text-2xs : 0.625rem;
+	--text-3xs : 0.5rem;
+
 }

@@ -17,78 +17,81 @@
   <link rel="stylesheet" href="./style/main.css">
 </head>
 <body class="antialiased text-white bg-flo-navy-900">
-<header class="bg-flo-navy-850 p-4 flex justify-between items-center">
+<header class="bg-flo-navy-850 px-5 py-6 flex justify-between items-center">
   <div>
-    <img class="h-8" src="./images/logo.svg" alt="">
+    <img class="h-6" src="./images/logo.svg" alt="">
   </div>
-  <ul class="inline-flex gap-4 font-heading text-shadow-sm text-shadow-flo-navy-950">
+  <ul class="inline-flex gap-4 font-heading text-xs tracking-wide text-shadow-sm text-shadow-flo-navy-950">
     <li>
-      <a href="#" class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Features</a>
+      <a href="#" class="p-1 hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Features</a>
     </li>
     <li>
-      <a href="#" class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Team</a>
+      <a href="#" class="p-1 hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Team</a>
     </li>
     <li>
-      <a href="#" class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Sign In</a>
+      <a href="#" class="p-1 hover:underline hover:decoration-2 hover:underline-offset-2 hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">Sign In</a>
     </li>
   </ul>
 </header>
 <main>
-  <section class="px-8 pt-8 relative bg-flo-navy-850">
-    <picture>
-      <source srcset="./images/bg-curvy-desktop.svg" media="(min-width: 640px)">
-      <img class="pointer-events-none absolute w-full inset-x-0 bottom-0" src="./images/bg-curvy-mobile.svg" aria-hidden="true">
-    </picture>
+  <section class="px-8 pt-6 relative bg-flo-navy-850">
+    <div class="pointer-events-none absolute w-full inset-x-0 bottom-0">
+      <picture>
+        <source srcset="./images/bg-curvy-desktop.svg" media="(min-width: 640px)">
+        <img class="w-full" src="./images/bg-curvy-mobile.svg" aria-hidden="true">
+      </picture>
+      <div class="h-64 w-full bg-flo-navy-900"></div>
+    </div>
     <section class="relative pb-12 lg:max-w-lg lg:mx-auto">
       <img class="mx-auto" src="./images/illustration-intro.png" alt="">
-      <h1 class="text-2xl font-heading font-bold text-center py-8 lg:text-3xl">
+      <h1 class="text-2xl/9 font-heading font-bold text-center pt-8 pb-4 lg:text-3xl">
         All your files in one secure location, accessible anywhere.
       </h1>
-      <p class=" text-center pb-8 text-sm lg:text-base">
+      <p class=" text-center pb-8 px-2 text-sm lg:text-base">
         Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
       </p>
-      <a href="#earlyAccess" class="block rounded-full py-3.5 px-8 bg-gradient-to-r from-flo-teal to-flo-cyan font-heading font-bold text-white text-center text-shadow-2xs text-shadow-flo-cyan transition hover:to-flo-teal lg:max-w-2xs lg:mx-auto">Get Started</a>
+      <a href="#earlyAccess" class="block rounded-full py-3.5 px-20 bg-gradient-to-r from-flo-teal to-flo-cyan font-heading font-bold text-sm text-white text-center text-shadow-2xs text-shadow-flo-cyan transition hover:to-flo-teal max-w-max mx-auto lg:max-w-2xs">Get Started</a>
     </section>
   </section>
-  <section class="grid gap-12 px-5 py-12 lg:max-w-4xl lg:mx-auto lg:grid-cols-2 lg:gap-24">
+  <section class="grid gap-20 px-7 pt-21 pb-12 lg:max-w-4xl lg:mx-auto lg:grid-cols-2 lg:gap-24">
     <article class="text-center">
-      <img class="mx-auto" src="images/icon-access-anywhere.svg">
-      <h2 class="font-heading font-bold pt-8 pb-4">Access your files, anywhere</h2>
-      <p class="text-sm">The ability to use a smartphone, tablet, or computer to access your account means your
+      <img class="max-w-16 mx-auto" src="images/icon-access-anywhere.svg">
+      <h2 class="font-heading font-bold text-lg pt-8 pb-2">Access your files, anywhere</h2>
+      <p class="text-sm px-1">The ability to use a smartphone, tablet, or computer to access your account means your
   files follow you everywhere.</p>
     </article>
-    <article class="text-center">
-      <img class="mx-auto" src="images/icon-security.svg">
-      <h2 class="font-heading font-bold pt-8 pb-4">Security you can trust</h2>
-      <p class="text-sm">2-factor authentication and user-controlled encryption are just a couple of the security
+    <article class="text-center pt-2">
+      <img class="max-h-17 mx-auto" src="images/icon-security.svg">
+      <h2 class="font-heading font-bold text-lg pt-7 pb-2">Security you can trust</h2>
+      <p class="text-sm px-1">2-factor authentication and user-controlled encryption are just a couple of the security
   features we allow to help secure your files.</p>
     </article>
-    <article class="text-center">
-      <img class="mx-auto" src="images/icon-collaboration.svg">
-      <h2 class="font-heading font-bold pt-8 pb-4">Real-time collaboration</h2>
-      <p class="text-sm">Securely share files and folders with friends, family and colleagues for live collaboration.
+    <article class="text-center pt-3">
+      <img class="max-w-16 mx-auto" src="images/icon-collaboration.svg">
+      <h2 class="font-heading font-bold text-lg pt-8 pb-2">Real-time collaboration</h2>
+      <p class="text-sm px-1">Securely share files and folders with friends, family and colleagues for live collaboration.
   No email attachments required.</p>
     </article>
-    <article class="text-center">
-      <img class="mx-auto" src="images/icon-any-file.svg">
-      <h2 class="font-heading font-bold pt-8 pb-4">Store any type of file</h2>
+    <article class="text-center pt-4">
+      <img class="max-h-12 mx-auto" src="images/icon-any-file.svg">
+      <h2 class="font-heading font-bold text-lg pt-9 pb-2">Store any type of file</h2>
       <p class="text-sm"> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
   file types to be securely stored and shared.</p>
     </article>
   </section>
-  <section class="px-5 py-12 lg:max-w-6xl lg:mx-auto lg:flex lg:gap-16">
-    <img class="mx-auto lg:max-w-lg" src="./images/illustration-stay-productive.png" alt="">
+  <section class="px-7 pt-28 pb-12 lg:max-w-6xl lg:mx-auto lg:flex lg:gap-16">
+    <img class="px-2 mx-auto lg:max-w-lg" src="./images/illustration-stay-productive.png" alt="">
     <div>
-      <h2 class="font-heading font-bold pt-8 pb-4 lg:text-4xl">
+      <h2 class="font-heading font-bold pt-12 pb-4 text-lg lg:text-4xl">
         Stay productive, wherever you are
       </h2>
-      <p class="text-sm pb-4 lg:text-base">
+      <p class="text-sm/5 pb-4 lg:text-base">
        Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
       </p>
-      <p class="text-sm pb-4 lg:text-base">
+      <p class="text-sm/5 pb-4 lg:text-base">
         Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
       </p>
-      <p class="text-sm lg:text-base">
+      <p class="text-xs lg:text-base">
         <a class="inline-flex items-center gap-1.5 pb-1 border-b border-flo-teal text-flo-teal group transition cursor-pointer hover:text-white hover:border-white">
           <span>See how Fylo works</span>
           <span class="text-flo-teal transition group-hover:text-white">
@@ -98,53 +101,53 @@
       </p>
     </div>
   </section>
-  <section class="px-8 py-12 max-w-6xl lg:mx-auto">
-    <img class="w-8" src="./images/bg-quotes.png" alt="">
-    <section class="grid gap-12 lg:grid-cols-3 lg:px-1.5 lg:-mt-1.5">
-      <article class="bg-flo-navy-800 rounded-md py-6 px-4 lg:rounded-xs">
-        <p class="text-sm pb-6">
+  <section class="px-12 pt-27 max-w-6xl lg:mx-auto">
+    <img class="ms-1.5 w-5 lg:w-8" src="./images/bg-quotes.png" alt="">
+    <section class="grid gap-6 lg:gap-12 lg:grid-cols-3 lg:px-1.5 lg:-mt-1.5">
+      <article class="bg-flo-navy-800 rounded-md pt-6 pb-5 px-5 lg:rounded-xs">
+        <p class="text-[0.625rem]/4.5 pb-4 lg:text-sm">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
         </p>
         <div class="flex gap-2">
-          <img class="rounded-full size-8 overflow-hidden" src="./images/profile-1.jpg" alt="">
-          <div class="text-xs">
-            <p class="font-bold">Satish Patel</p>
-            <p>Founder & CEO, Huddle</p>
+          <img class="rounded-full size-6 overflow-hidden" src="./images/profile-1.jpg" alt="">
+          <div>
+            <p class="text-2xs tracking-wide font-bold pb-0.5">Satish Patel</p>
+            <p class="text-3xs">Founder & CEO, Huddle</p>
           </div>
         </div>
       </article>
-      <article class="bg-flo-navy-800 rounded-md py-6 px-4 lg:rounded-xs">
-        <p class="text-sm pb-6">
+      <article class="bg-flo-navy-800 rounded-md pt-6 pb-5 px-5 lg:rounded-xs">
+        <p class="text-[0.625rem]/4.5 pb-4 lg:text-sm">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
         </p>
         <div class="flex gap-2">
-          <img class="rounded-full size-8 overflow-hidden" src="./images/profile-2.jpg" alt="">
-          <div class="text-xs">
-            <p class="font-bold">Bruce McKenzie</p>
-            <p>Founder & CEO, Huddle</p>
+          <img class="rounded-full size-6 overflow-hidden" src="./images/profile-2.jpg" alt="">
+          <div>
+            <p class="text-2xs tracking-wide font-bold pb-0.5">Bruce McKenzie</p>
+            <p class="text-3xs">Founder & CEO, Huddle</p>
           </div>
         </div>
       </article>
-      <article class="bg-flo-navy-800 rounded-md py-6 px-4 lg:rounded-xs">
-        <p class="text-sm pb-6">
+      <article class="bg-flo-navy-800 rounded-md pt-6 pb-5 px-5 lg:rounded-xs">
+        <p class="text-[0.625rem]/4.5 pb-4 lg:text-sm">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
         </p>
         <div class="flex gap-2">
-          <img class="rounded-full size-8 overflow-hidden" src="./images/profile-3.jpg" alt="">
-          <div class="text-xs">
-            <p class="font-bold">Iva Boyd</p>
-            <p>Founder & CEO, Huddle</p>
+          <img class="rounded-full size-6 overflow-hidden" src="./images/profile-3.jpg" alt="">
+          <div>
+            <p class="text-2xs tracking-wide font-bold pb-0.5">Iva Boyd</p>
+            <p class="text-3xs">Founder & CEO, Huddle</p>
           </div>
         </div>
       </article>
     </section>
   </section>
-  <section class="bg-flo-navy-850 mx-5 px-5 py-10 text-center translate-y-1/2 lg:max-w-3xl lg:mx-auto" id="earlyAccess">
-    <h2 class="font-heading font-bold pb-4 lg:text-3xl">Get early access today</h2>
-    <p class="text-sm pb-8 lg:max-w-prose lg:mx-auto">
+  <section class="bg-flo-navy-850 rounded-xl mx-5 px-7 py-10 text-center translate-y-1/2 lg:max-w-3xl lg:mx-auto" id="earlyAccess">
+    <h2 class="font-heading font-bold text-lg pb-4 lg:text-3xl">Get early access today</h2>
+    <p class="text-sm leading-5.25 pb-8 lg:max-w-prose lg:mx-auto">
       It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
     </p>
-    <form x-data="getEarlyAccess()" method="post" class="flex flex-col gap-4 lg:flex-row">
+    <form x-data="getEarlyAccess()" method="post" class="flex flex-col gap-6 lg:flex-row">
       <input
           x-model="email"
           x-on:input = "validate('email')"
@@ -155,31 +158,31 @@
           aria-label="email"
           required
           placeholder="email@example.com"
-          class="rounded-full py-3.5 px-6 bg-white text-flo-navy-950 text-sm w-full"
+          class="rounded-full py-3.5 px-7 bg-white text-flo-navy-950 text-sm w-full placeholder:text-2xs placeholder:text-flo-navy-900/25"
       >
       <p x-show="validation.email.invalid" x-text="validation.email.message" class="text-flo-red text-xs"></p>
-      <button type="submit" class="block rounded-full py-3.5 px-8 bg-gradient-to-r from-flo-teal to-flo-cyan font-heading font-bold text-white text-center text-shadow-2xs text-shadow-flo-cyan text-nowrap transition hover:to-flo-teal">Get Started For Free</button>
+      <button type="submit" class="block rounded-full py-3.5 px-8 bg-gradient-to-r from-flo-teal to-flo-cyan font-heading font-bold text-sm text-white text-center text-shadow-2xs text-shadow-flo-cyan text-nowrap transition hover:to-flo-teal">Get Started For Free</button>
     </form>
   </section>
 </main>
-<footer class="bg-flo-navy-950 pt-60 px-8 pb-12 lg:pb-24">
-  <section class="grid gap-8 lg:max-w-7xl lg:mx-auto lg:grid-cols-7">
-    <img class="col-span-full" src="./images/logo.svg" alt="">
-    <div class="flex gap-3 lg:col-span-2">
+<footer class="bg-flo-navy-950 pt-64 px-8 pb-10 lg:pb-24">
+  <section class="grid gap-4 lg:max-w-7xl lg:mx-auto lg:grid-cols-7">
+    <img class="ms-2 col-span-full" src="./images/logo.svg" alt="">
+    <div class="flex gap-6 pt-6 lg:col-span-2">
         <img class="h-4 self-start mt-1.5" src="./images/icon-location.svg">
         <p class="lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     </div>
     <ul class="grid gap-4 lg:auto-rows-min">
-      <li class="flex gap-3 lg:self-start">
+      <li class="flex gap-5 lg:self-start">
         <img class="h-4 self-center" src="./images/icon-phone.svg">
-        <p>+1-543-123-4567</p>
+        <p class="text-sm">+1-543-123-4567</p>
       </li>
-      <li class="flex gap-3 lg:self-start">
+      <li class="flex gap-5 pt-1 lg:self-start">
         <img class="h-4 self-center" src="./images/icon-email.svg">
-        <p>example@fylo.com</p>
+        <p class="text-sm">example@fylo.com</p>
       </li>
     </ul>
-    <ul class="grid gap-3 lg:col-start-5">
+    <ul class="grid gap-3.5 pt-16 lg:col-start-5">
       <li>
         <a href="" class="hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">
           About Us
@@ -201,7 +204,7 @@
         </a>
       </li>
     </ul>
-    <ul class="grid gap-3 lg:col-start-6">
+    <ul class="grid gap-3.5 pt-8 lg:col-start-6">
       <li>
         <a href="" class="hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-flo-teal">
           Contact Us
@@ -218,9 +221,9 @@
         </a>
       </li>
     </ul>
-    <ul class="flex justify-center gap-4 lg:col-start-7">
+    <ul class="flex justify-center gap-2.5 pt-14 lg:col-start-7">
       <li>
-        <a href="" class="rounded-full border border-white p-1 inline-flex hover:border-flo-teal hover:text-flo-teal">
+        <a href="" class="rounded-full border border-white p-1.5 inline-flex hover:border-flo-teal hover:text-flo-teal">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               class="fill-current size-3.5"
@@ -233,7 +236,7 @@
         </a>
       </li>
       <li>
-        <a href="" class="rounded-full border border-white p-1 inline-flex hover:border-flo-teal hover:text-flo-teal">
+        <a href="" class="rounded-full border border-white p-1.5 inline-flex hover:border-flo-teal hover:text-flo-teal">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               class="fill-current size-3.5"
@@ -246,7 +249,7 @@
         </a>
       </li>
       <li>
-        <a href="" class="rounded-full border border-white p-1 inline-flex hover:border-flo-teal hover:text-flo-teal">
+        <a href="" class="rounded-full border border-white p-1.5 inline-flex hover:border-flo-teal hover:text-flo-teal">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               class="fill-current size-3.5"
